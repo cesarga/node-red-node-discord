@@ -22,7 +22,7 @@ export = (RED: Red) => {
     const { token } = configNode;
     const node = this;
     const botInstance = new Bot();
-    const processbot = props.processbot ?? false;
+    // const processbot = props.processbot ?? false;
     const rawChannels = props.channels;
     const channels =
       rawChannels.length > 0
@@ -60,7 +60,7 @@ export = (RED: Red) => {
                   }
                 }
               }
-              if (((message.author !== bot.user) || processbot) && processingAllowed) {
+              if (processingAllowed) {
                 const msgid = RED.util.generateId();
                 const msg = { _msgid: msgid } as IFromDiscordMsg;
                 const msgReaction = new Reactions(reaction, user);

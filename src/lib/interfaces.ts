@@ -32,6 +32,10 @@ export interface ISendMessageProps extends NodeProperties {
   channel: string;
 }
 
+export interface IDeleteMessageProps extends NodeProperties {
+  token: string;
+}
+
 export interface IBot extends Client {
   numReferences?: number;
 }

@@ -46,6 +46,7 @@
       "discord-get-messages": "dist/nodes/get-messages.js",
       "discord-get-emoji-reactions": "dist/nodes/get-emoji-reactions.js",
       "discord-send-messages": "dist/nodes/send-messages.js",
+      "discord-delete-messages": "dist/nodes/delete-messages.js",
       "discord-members-monitoring": "dist/nodes/members-monitoring.js"
     }
   },

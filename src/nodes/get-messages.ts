@@ -56,7 +56,7 @@ export = (RED: Red) => {
                 }
               }
             }
-            if (message.author !== bot.user && processingAllowed) {
+            if (processingAllowed) {
               const msgid = RED.util.generateId();
               const msg = { _msgid: msgid } as IFromDiscordMsg;
               const attachments = message.attachments;
