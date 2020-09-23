@@ -6,6 +6,7 @@
 			name: { value: '', required: false },
 			token: { value: '', required: true, type: 'discord-token' },
 			channels: { value: '', required: false },
+            processbot: { value: false, required: false }
 		},
 		inputs: 0,
 		outputs: 1,
@@ -27,6 +28,10 @@
 	<div class="form-row">
 	    <label for="node-input-channels"><i class="icon-tag"></i>Channels to listen</label>
 	    <input type="text" id="node-input-channels" placeholder="#12341 #45452334 #1234">
+	</div>
+		<div class="form-row">
+	    <label for="node-input-processbot"><i class="icon-tag"></i>Process bot messages</label>
+	    <input type="checkbox" id="node-input-processbot">
 	</div>
 </script>
 <script type="text/x-red" data-help-name="discord-get-emoji-reactions">

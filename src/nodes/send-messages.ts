@@ -1,9 +1,9 @@
 import { Attachment, Channel, RichEmbed } from 'discord.js';
+import { Node, Red } from 'node-red';
 import { Bot } from '../lib/Bot';
 import { Embed } from '../lib/Embed';
-import { isEmbed, isNamedChannel } from '../lib/utils';
 import { Mentions } from '../lib/Mentions';
-import { Node, Red } from 'node-red';
+import { isEmbed, isNamedChannel } from '../lib/utils';
 
 import {
   IBot,

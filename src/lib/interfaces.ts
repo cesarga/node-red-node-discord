@@ -24,6 +24,7 @@ export interface IConnectConfig extends Node {
 export interface IDiscordChannelConfig extends Node {
   token: string;
   channels: string;
+  processbot: boolean;
 }
 
 export interface ISendMessageProps extends NodeProperties {
